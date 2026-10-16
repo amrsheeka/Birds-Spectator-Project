@@ -107,10 +107,8 @@ body {
 .event-image { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--aqua); transition: transform .45s ease; }
 .event-card:hover .event-image { transform: scale(1.035); }
 .event-content { padding: 15px 18px 19px; }
-.event-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
-.event-date { color: var(--blue-dark); text-align: left; }
-.event-day { display: block; font-size: .94rem; font-weight: 800; }
-.event-month { display: block; margin-top: 2px; color: var(--muted); font-size: .76rem; }
+.event-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.event-date { min-width: 0; flex: 1; color: var(--blue-dark); font-size: .84rem; font-weight: 800; line-height: 1.55; text-align: right; }
 .event-label { padding: 5px 9px; border-radius: 999px; color: var(--blue-dark); background: #e7f4f4; font-size: .72rem; font-weight: 700; }
 .event-card h3 { margin: 0 0 7px; font-size: 1rem; line-height: 1.6; }
 .event-card p { margin: 0; color: var(--muted); font-size: .85rem; line-height: 1.8; }
