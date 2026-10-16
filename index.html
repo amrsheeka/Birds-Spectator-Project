@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf7f8">
+  <meta name="description" content="منصة سريعة لجمع وتسجيل مشاهدات الطيور المهاجرة على الشواطئ">
+  <title>مشروع رصد مسارات هجرة الطيور البحرية</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <p class="topline"><span class="status-dot" aria-hidden="true"></span> رصد ميداني · حماية الحياة البحرية</p>
+    <section class="card" aria-labelledby="page-title">
+      <div class="intro">
+        <div class="hero-gallery" aria-hidden="true">
+          <img class="active" src="assets/images/seagull-sunset.avif" alt="" fetchpriority="high">
+          <img src="assets/images/gull-over-waves.avif" alt="" loading="lazy">
+          <img src="assets/images/seagulls-ocean.avif" alt="" loading="lazy">
+        </div>
+        <div>
+          <div class="brand" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 19c4-1 6-5 10-5 3 0 4 2 7 2 2 0 4-1 7-4-1 5-5 9-10 9-3 0-5-1-7-1-2 0-4 1-7 2Z" fill="currentColor"/><path d="M7 25c5-2 10-2 15-1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".55"/></svg>
+          </div>
+          <h1 id="page-title">مشروع رصد مسارات هجرة الطيور البحرية</h1>
+          <p class="description">منصة سريعة لجمع وتسجيل مشاهدات الطيور المهاجرة على الشواطئ</p>
+        </div>
+        <div class="route-note">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 18c3-7 5-10 9-10 2 0 3 1 4 3l3-1-1 4-4-1 1-1c-1-2-2-3-4-2-3 1-4 4-6 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="18" r="1.5" fill="currentColor"/></svg>
+          <span>كل مشاهدة تساعدنا على فهم رحلاتها وحماية موائلها</span>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <p class="eyebrow">ساهم في الرصد</p>
+        <h2>سجّل مشاهدة جديدة</h2>
+        <p class="form-hint">أدخل تفاصيل المشاهدة لمساعدتنا في تتبّع مسارات الهجرة.</p>
+        <form id="sighting-form">
+          <div>
+            <label for="observer">اسم الراصد</label>
+            <input id="observer" name="observer" type="text" placeholder="مثال: سارة أحمد" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="region">المنطقة</label>
+            <input id="region" name="region" type="text" placeholder="مثال: ساحل البحر الأحمر" required>
+          </div>
+          <div>
+            <label for="bird">نوع الطائر</label>
+            <input id="bird" name="bird" type="text" placeholder="مثال: النورس أبيض العين" required>
+          </div>
+          <button type="submit">
+            <span>إرسال المشاهدة</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="success" id="success-message" role="status" aria-live="polite">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          تم تسجيل المشاهدة بنجاح
+        </p>
+      </div>
+    </section>
+
+    <section class="species-section" aria-labelledby="species-heading">
+      <h2 class="species-heading" id="species-heading">طيور على مسارات الهجرة</h2>
+      <p class="species-intro">أمثلة لطيور يمكن رصدها قرب الشواطئ والمسطحات الساحلية.</p>
+      <div class="species-grid">
+        <article class="species-card" data-reveal>
+          <img src="assets/images/gull-over-waves.avif" alt="نورس يطير فوق أمواج البحر" loading="lazy">
+          <div class="species-copy">
+            <h3>النورس</h3>
+            <p>طائر ساحلي يُرى كثيرًا وهو يحلق فوق المياه بحثًا عن غذائه.</p>
+            <a href="https://unsplash.com/photos/a-seagull-is-flying-over-the-waves-in-the-ocean-nGHA5Visq2g" target="_blank" rel="noopener noreferrer">مصدر الصورة</a>
+          </div>
+        </article>
+        <article class="species-card" data-reveal>
+          <img src="assets/images/tern-in-flight.avif" alt="خطاف بحر يطير بمحاذاة سطح الماء" loading="lazy">
+          <div class="species-copy">
+            <h3>خطاف البحر القطبي</h3>
+            <p>رحّالة بعيدة المدى، يصطاد الأسماك بالغوص قرب سطح البحر.</p>
+            <a href="https://unsplash.com/photos/a-tern-bird-in-flight-over-water-i40nHf7CT9M" target="_blank" rel="noopener noreferrer">مصدر الصورة</a>
+          </div>
+        </article>
+        <article class="species-card" data-reveal>
+          <img src="assets/images/pelican-over-ocean.avif" alt="بجع بني يطير فوق المحيط" loading="lazy">
+          <div class="species-copy">
+            <h3>البجع البني</h3>
+            <p>طائر بحري كبير يصطاد الأسماك من المياه الساحلية.</p>
+            <a href="https://unsplash.com/photos/a-pelican-flying-over-the-ocean-on-a-sunny-day-wXZL63-DEeU" target="_blank" rel="noopener noreferrer">مصدر الصورة</a>
+          </div>
+        </article>
+        <article class="species-card" data-reveal>
+          <img src="assets/images/flamingos-water.avif" alt="طيور فلامنجو تقف في المياه الضحلة" loading="lazy">
+          <div class="species-copy">
+            <h3>الفلامنجو</h3>
+            <p>يتجمع في المياه الضحلة والبحيرات الساحلية بحثًا عن الغذاء.</p>
+            <a href="https://unsplash.com/photos/two-flamingos-are-standing-in-the-water-wtGdR4j5JxI" target="_blank" rel="noopener noreferrer">مصدر الصورة</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="events-section" aria-labelledby="events-heading">
+      <h2 class="events-heading" id="events-heading">المناسبات البيئية المخصصة للطيور</h2>
+      <p class="events-intro">أيام عالمية تذكّرنا بأهمية الطيور المهاجرة وموائلها والتنوع الحيوي.</p>
+      <div class="events-grid">
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/migrating-flock.avif" alt="سرب من الطيور يحلق في السماء" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">السبت الثاني</span>
+              <span class="event-label">طيور مهاجرة</span>
+            </div>
+            <h3>اليوم العالمي للطيور المهاجرة</h3>
+            <p>لرفع الوعي بهجرة الطيور وحماية المسارات والموائل التي تعتمد عليها.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/tern-in-flight.avif" alt="طائر خطاف البحر يحلق فوق الماء" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">02</span>
+              <span class="event-label">موائل الطيور</span>
+            </div>
+            <h3>اليوم العالمي للأراضي الرطبة</h3>
+            <p>للتعريف بدور الأراضي الرطبة في دعم الطيور والتنوع الحيوي.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/pelican-over-ocean.avif" alt="بجع يطير فوق المحيط" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">03</span>
+              <span class="event-label">الحياة البرية</span>
+            </div>
+            <h3>اليوم العالمي للحياة البرية</h3>
+            <p>مناسبة للتوعية بأهمية حماية الأنواع البرية وبيئاتها الطبيعية.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/curlew.avif" alt="كروان طويل المنقار في موئله الطبيعي" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">21</span>
+              <span class="event-label">طيور ساحلية</span>
+            </div>
+            <h3>اليوم العالمي للكروان</h3>
+            <p>للتنبيه إلى ما تواجهه طيور الكروان من فقدان للموائل والصيد.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/flamingos-water.avif" alt="طيور فلامنجو في المياه الضحلة" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">26</span>
+              <span class="event-label">طيور مائية</span>
+            </div>
+            <h3>اليوم العالمي للفلامنجو</h3>
+            <p>للتعريف بطيور الفلامنجو وأهمية حماية مناطق تغذيتها وتكاثرها.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/gull-over-waves.avif" alt="نورس يحلق فوق أمواج البحر" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">22</span>
+              <span class="event-label">تنوع حيوي</span>
+            </div>
+            <h3>اليوم العالمي للتنوع الحيوي</h3>
+            <p>للتأكيد على قيمة تنوع الكائنات الحية والحفاظ على النظم البيئية.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/tern-in-flight.avif" alt="طائر بحري يحلق بمحاذاة سطح الماء" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">05</span>
+              <span class="event-label">بيئة</span>
+            </div>
+            <h3>اليوم العالمي للبيئة</h3>
+            <p>فرصة للتفكير في أثر التغيرات البيئية على الطيور وسائر الكائنات.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/migrating-flock.avif" alt="طيور تحلق في السماء فوق موائلها" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">17</span>
+              <span class="event-label">موائل طبيعية</span>
+            </div>
+            <h3>اليوم العالمي لمكافحة التصحر</h3>
+            <p>للتوعية بتدهور الأراضي وتأثيره على الحياة البرية وموائل الطيور.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/oystercatcher.avif" alt="طائر آكل المحار على الشاطئ" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">09</span>
+              <span class="event-label">طيور ساحلية</span>
+            </div>
+            <h3>يوم طائر آكل المحار</h3>
+            <p>لإبراز دور هذا الطائر الساحلي في توازن النظم البيئية.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/curlew.avif" alt="طائر كروان طويل المنقار قرب موطن ساحلي" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">06</span>
+              <span class="event-label">طيور شاطئية</span>
+            </div>
+            <h3>اليوم العالمي للطيور الشاطئية</h3>
+            <p>للتوعية بحماية الشواطئ والأراضي الرطبة التي تعتمد عليها الطيور.</p>
+          </div>
+        </article>
+        <article class="event-card" data-reveal>
+          <img class="event-image" src="assets/images/vulture-in-flight.avif" alt="نسر يحلق في السماء" loading="lazy">
+          <div class="event-content">
+            <div class="event-card-top">
+              <span class="event-date"><span class="event-day">السبت الأول</span>
+              <span class="event-label">طيور جارحة</span>
+            </div>
+            <h3>اليوم العالمي للتوعية بالنسور</h3>
+            <p>للتعريف بدور النسور في المنظومة البيئية وأهمية صونها.</p>
+          </div>
+        </article>
+      </div>
+      <p class="events-source">التواريخ والمناسبات مستلهمة من <a href="https://birds.ly/" target="_blank" rel="noopener noreferrer">منصة رصد طيور ليبيا</a>.</p>
+    </section>
+
+    <article class="purpose-article" aria-labelledby="purpose-heading" data-reveal>
+      <h2 id="purpose-heading">عن المشروع</h2>
+      <p>يهدف هذا الموقع إلى توثيق مشاهدات الطيور البحرية المهاجرة على الشواطئ، وجمع معلومات عن أنواعها والمناطق التي تمر بها. تساعد هذه الملاحظات على تكوين صورة أوضح عن مسارات الهجرة ومواسمها، وتدعم جهود الباحثين والمهتمين في حماية الطيور وموائلها الساحلية.</p>
+    </article>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
